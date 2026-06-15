@@ -24,7 +24,7 @@ export const stackGroups = [
     title: "AI-Assisted Development",
     items: ["ChatGPT", "Claude", "Codex"],
     featured: true,
-    description: "We use industry-leading AI tools to plan faster, catch errors earlier, and spend more time on the details that matter — so you get a better product in less time."
+    description: "We build with the best tools available — including AI. It means faster delivery, cleaner code, and more time focused on what actually makes your project stand out."
   }
 ];
 
