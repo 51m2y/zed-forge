@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #0a0a0f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0a0f;
+  color: #f0f0f5;
+}
+
+.light body {
+  background: #fafafa;
+  color: #09090b;
+}
+
+.light .bg-ff-bg {
+  background-color: #fafafa;
+}
+
+.light .bg-ff-surface {
+  background-color: #ffffff;
+}
+
+.light .bg-ff-surface\/40 {
+  background-color: rgba(255, 255, 255, 0.72);
+}
+
+.light .bg-ff-surface\/70 {
+  background-color: rgba(255, 255, 255, 0.78);
+}
+
+.light .bg-ff-surface-2,
+.light .hover\:bg-ff-surface-2:hover {
+  background-color: #f4f4f5;
+}
+
+.light .border-ff-border {
+  border-color: #e4e4e7;
+}
+
+.light .text-ff-text {
+  color: #09090b;
+}
+
+.light .text-ff-muted {
+  color: #71717a;
+}
+
+.light .text-ff-muted\/40 {
+  color: rgba(113, 113, 122, 0.4);
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.hero-grid {
+  background-image: radial-gradient(circle, rgba(35, 35, 45, 0.9) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.hero-grid::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  opacity: 0.18;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+.hero-grid::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent 60%, var(--bg) 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: #22c55e;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+  }
+}
+
+.focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ff-blue focus-visible:ring-offset-2 focus-visible:ring-offset-ff-bg;
+}
