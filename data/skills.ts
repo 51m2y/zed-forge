@@ -21,9 +21,10 @@ export const stackGroups = [
     items: ["Git", "GitHub", "Vercel", "Figma", "VS Code"]
   },
   {
-    title: "AI Workflow",
+    title: "AI-Assisted Development",
     items: ["ChatGPT", "Claude", "Codex"],
-    featured: true
+    featured: true,
+    description: "We use industry-leading AI tools to plan faster, catch errors earlier, and spend more time on the details that matter — so you get a better product in less time."
   }
 ];
 

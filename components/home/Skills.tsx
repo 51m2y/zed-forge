@@ -39,6 +39,11 @@ export function Skills() {
                     </span>
                   ))}
                 </div>
+                {group.description && (
+                  <p className="mt-3 text-sm leading-relaxed text-ff-muted">
+                    {group.description}
+                  </p>
+                )}
               </div>
             ))}
             <div className="rounded-lg border border-ff-border bg-ff-surface p-5 sm:col-span-2">
