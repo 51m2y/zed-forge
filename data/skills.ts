@@ -26,6 +26,6 @@ export const stackGroups = [
     featured: true,
     description: "We build with the best tools available — including AI. It means faster delivery, cleaner code, and more time focused on what actually makes your project stand out."
   }
-];
+] as const;
 
 export const learning = ["Supabase", "React Native", "Node.js"];
