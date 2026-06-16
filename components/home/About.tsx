@@ -16,7 +16,7 @@ export function About() {
             <p>zed-forge exists to change that.</p>
             <p>We build everything from simple business websites to full SaaS platforms — using modern tools, clean code, and a workflow refined across every project we ship.</p>
             <div className="rounded-lg border border-ff-blue/50 bg-ff-blue/10 p-5 text-ff-text">
-              We use a deliberate AI-assisted pipeline: planning with ChatGPT, reviewing and refining with Claude, and building with Codex. The result is faster delivery, fewer mistakes, and more time spent on the details that matter to your business.
+              We build with the best tools available — including AI. It means faster delivery, cleaner code, and more time focused on what actually makes your project stand out.
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               {values.map((value) => (

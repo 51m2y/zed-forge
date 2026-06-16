@@ -15,7 +15,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
           <Link href="/" className="inline-flex text-ff-text">
-            <Logo />
+            <Logo size="sm" />
           </Link>
           <p className="mt-4 text-sm text-ff-muted">Built in Lusaka, Zambia</p>
           <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-ff-border px-3 py-1 text-sm text-ff-text">

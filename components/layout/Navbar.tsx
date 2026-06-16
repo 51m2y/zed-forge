@@ -96,7 +96,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="focus-ring rounded-md text-ff-text" aria-label="zed-forge home">
-          <Logo />
+          <Logo showTagline size="md" />
         </Link>
         <nav className="hidden items-center gap-5 md:flex">{nav}</nav>
         <div className="hidden items-center gap-2 md:flex">
